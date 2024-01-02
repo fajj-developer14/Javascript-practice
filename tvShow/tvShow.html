@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tv Shows</title>
+</head>
+<body>
+    <style>
+        #tvShowList {
+            margin-top: 30px;
+        }
+        .showItem {
+            margin: 5px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
+    </style>
+
+    <h1>TV Show Search</h1>
+    <form id="tvForm">
+        <input id="tvForm__inp" type="text" placeholder="TV Show Title">
+        <button>Search</button>
+    </form>
+
+    <ul id="tvShowList"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
